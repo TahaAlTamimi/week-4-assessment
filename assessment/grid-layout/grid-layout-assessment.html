@@ -15,10 +15,13 @@
       color: white;
       padding: 1.5em 0;
       font-size: 2em;
+
+
     }
 
     .a {
       background: #0d9;
+
     }
 
     .b {
@@ -45,9 +48,33 @@
     /* Your code starts here */
     /* CODE AREA */
 
-    .container {}
+    .container {
 
-    .a {}
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-gap: 5px 5px;
+
+
+    }
+
+    .a {grid-column: 2/3;
+      grid-row: 2/3;
+      
+
+    }
+    .b{
+      grid-column: 1/2;
+    }
+    .c{
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    .d{
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+   
 
     /* END CODE AREA */
   </style>
